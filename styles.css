@@ -1,0 +1,389 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #04020B;
+    background-color: #E8DFF1;
+    margin: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 0.8rem 1.5rem;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Button Styles - Light Outline */
+.btn-outline-light {
+    border-color: #E8DFF1;
+    color: #E8DFF1;
+}
+
+.btn-outline-light:hover {
+    background-color: #E8DFF1;
+    color: #04020B;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: #322BAB;
+    color: #E8DFF1;
+    padding: 5rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Primary Button Styles */
+.btn-primary {
+    background-color: #9C92AC;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #322BAB;
+}
+
+/* Container Styles - Headings and Lists */
+.container h2, .container h3, .container h5 {
+    color: #3B1D70;
+    margin-bottom: 1rem;
+}
+
+.container ul {
+    padding: 0;
+}
+
+.container ul li {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.container ul li i {
+    margin-right: 0.5rem;
+}
+
+/* Background Color Utility Class */
+.bg-darkblue {
+    background-color: #3B1D70;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #3B1D70;
+    color: #E8DFF1;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Iframe Styles */
+iframe {
+    border: none;
+    border-radius: 10px;
+}
+/* Demo Section */
+.demo-section {
+    padding: 3rem 1rem;
+    background-color: #E8DFF1;
+    border-radius: 10px; 
+}
+
+.demo-section h2 {
+    color: #3B1D70; 
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.demo-section p {
+    color: #04020B; 
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.demo-section .btn-outline-primary {
+    color: #322BAB; 
+    border-color: #322BAB;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+}
+
+.demo-section .btn-outline-primary:hover {
+    background-color: #322BAB;
+    color: #E8DFF1; 
+}
+/* Facts & Figures Section */
+.facts-figures-section {
+    background-color: #E8DFF1; 
+    padding: 3rem 1rem;
+}
+
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.fact-box {
+    background-color: #322BAB; 
+    color: #E8DFF1;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fact-number {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid #E8DFF1;
+    animation: typing 2s steps(30, end) forwards;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-right: 0.5rem; 
+    text-align: center; 
+}
+
+.facts-container p {
+    font-size: 1.1rem;
+}
+
+/* Typing Animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.fact-number {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid #E8DFF1;
+    animation: typing 2s steps(30, end) forwards;
+}
+
+/* Other Benefits Section */
+.other-benefits-section {
+    padding: 2rem 0;
+    background-color: #F7F9FC; 
+}
+
+.other-benefits-section h4 {
+    color: #3B1D70; 
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.benefits-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem; 
+}
+
+.benefit-card {
+    background-color: #E8DFF1; 
+    border: 1px solid #9C92AC; 
+    border-radius: 10px; 
+    padding: 1.5rem;
+    width: 250px; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.benefit-card i {
+    font-size: 2rem;
+    color: #3B1D70; 
+    margin-bottom: 0.5rem;
+}
+
+.benefit-card p {
+    font-size: 1.2rem; 
+    color: #04020B; 
+    margin: 0;
+}
+/* What Can an AI Voice Assistant Do Section */
+.what-can-do-section {
+    background-color: #F5F5F5;
+    padding: 4rem 1rem;
+    border-radius: 8px;
+}
+
+.section-heading {
+    font-size: 2rem;
+    color: #3B1D70;
+    margin-bottom: 1rem;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #322BAB;
+    margin-bottom: 2rem;
+}
+
+.feature-box {
+    background: #E8DFF1;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: #322BAB;
+    margin-bottom: 1rem;
+}
+
+.feature-box h4 {
+    font-size: 1.25rem;
+    color: #3B1D70;
+}
+/* Seamless CRM Integration Section */
+.crm-integration-section {
+    background-color: #F5F5F5;
+    padding: 3rem 1rem;
+    border-radius: 8px;
+}
+
+.section-subtitle {
+    font-size: 1.5rem;
+    color: #3B1D70;
+    margin-bottom: 0.5rem;
+}
+.feature-box p {
+    font-size: 1.1rem;
+    color: #3B1D70;
+    margin: 0;
+}
+
+/* Custom Dashboard Section */
+.dashboard-section {
+    background-color: #F7F9FC;
+    padding: 4rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    color: #3B1D70;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #5A4F77;
+    margin-bottom: 2rem;
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-list li {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E8DFF1;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.feature-list li:hover {
+    transform: translateY(-5px);
+    background-color: #D0C9E0;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    color: #3B1D70;
+    margin-right: 0.75rem;
+}
+/* FAQ Section */
+.faq-section {
+    background-color: #F5F5F5;
+    padding: 3rem 1.5rem;
+    border-radius: 10px;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    color: #3B1D70;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.faq-card {
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-card .card-header {
+    background-color: #E8DFF1;
+    border-bottom: 1px solid #D0C9E0;
+}
+
+.faq-card .card-header h5 {
+    margin: 0;
+}
+
+.faq-card .btn-link {
+    color: #3B1D70;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: left;
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    background: none;
+    border: none;
+    transition: color 0.3s;
+}
+
+.faq-card .btn-link:hover {
+    color: #322BAB;
+}
+
+.faq-card .card-body {
+    font-size: 1rem;
+    color: #04020B;
+    padding: 1.5rem;
+    background-color: #E8DFF1;
+}
