@@ -5,28 +5,6 @@ body {
     background-color: #E8DFF1;
     margin: 0;
 }
-
-/* Navbar Styles */
-.navbar {
-    padding: 0.8rem 1.5rem;
-}
-
-.navbar-brand {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-/* Button Styles - Light Outline */
-.btn-outline-light {
-    border-color: #E8DFF1;
-    color: #E8DFF1;
-}
-
-.btn-outline-light:hover {
-    background-color: #E8DFF1;
-    color: #04020B;
-}
-
 /* Hero Section Styles */
 .hero {
     background-color: #322BAB;
@@ -47,16 +25,12 @@ body {
 .btn-primary {
     background-color: #9C92AC;
     border: none;
-}
-
-.btn-primary:hover {
-    background-color: #322BAB;
+    border-radius: 500px;
 }
 
 /* Container Styles - Headings and Lists */
 .container h2, .container h3, .container h5 {
     color: #3B1D70;
-    margin-bottom: 1rem;
 }
 
 .container ul {
@@ -86,15 +60,9 @@ body {
 .footer p {
     margin: 0;
 }
-
-/* Iframe Styles */
-iframe {
-    border: none;
-    border-radius: 10px;
-}
 /* Demo Section */
 .demo-section {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
     background-color: #E8DFF1;
     border-radius: 10px; 
 }
@@ -105,27 +73,23 @@ iframe {
     margin-bottom: 1rem;
 }
 
-.demo-section p {
-    color: #04020B; 
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-}
-
 .demo-section .btn-outline-primary {
     color: #322BAB; 
     border-color: #322BAB;
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
+    border-radius: 500px;
 }
 
 .demo-section .btn-outline-primary:hover {
     background-color: #322BAB;
     color: #E8DFF1; 
+    
 }
 /* Facts & Figures Section */
 .facts-figures-section {
     background-color: #E8DFF1; 
-    padding: 3rem 1rem;
+    padding: 1rem 1rem;
 }
 
 .facts-container {
@@ -240,11 +204,12 @@ iframe {
 
 .feature-box {
     background: #E8DFF1;
-    padding: 2rem;
-    border-radius: 8px;
+    padding: 0.5rem;
+    border-radius: 500px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;   /* This constrols box of all */
 }
 
 .feature-box:hover {
@@ -292,7 +257,6 @@ iframe {
 .section-heading {
     font-size: 2.5rem;
     color: #3B1D70;
-    margin-bottom: 1rem;
     font-weight: 700;
 }
 
