@@ -3,20 +3,42 @@ body {
     font-family: Arial, sans-serif;
     color: #04020B;
     background-color: #E8DFF1;
+    background-color: #DDA0DD;
     margin: 0;
+    font-size: 1.2rem;
+    color: white;
 }
 /* Hero Section Styles */
 .hero {
-    background-color: #322BAB;
-    color: #E8DFF1;
+   /*  background-color: #322BAB; */
+    /* color: #E8DFF1; */
     padding: 5rem 2rem;
 }
-
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
-
+.navbar{
+    position: relative;
+}
+.nav-item{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-bottom: 1.3rem;
+    margin-right: 2rem;
+}
+@media (max-width: 768px) {
+    .logo{
+        margin-bottom: 40rem;
+    }
+    }
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
 .hero p {
     font-size: 1.2rem;
 }
@@ -28,25 +50,6 @@ body {
     border-radius: 500px;
 }
 
-/* Container Styles - Headings and Lists */
-.container h2, .container h3, .container h5 {
-    color: #3B1D70;
-}
-
-.container ul {
-    padding: 0;
-}
-
-.container ul li {
-    font-size: 1.1rem;
-    margin: 0.5rem 0;
-}
-
-.container ul li i {
-    margin-right: 0.5rem;
-}
-
-/* Background Color Utility Class */
 .bg-darkblue {
     background-color: #3B1D70;
 }
@@ -57,18 +60,14 @@ body {
     color: #E8DFF1;
 }
 
-.footer p {
-    margin: 0;
-}
+
 /* Demo Section */
 .demo-section {
     padding: 2rem 1rem;
-    background-color: #E8DFF1;
     border-radius: 10px; 
 }
 
 .demo-section h2 {
-    color: #3B1D70; 
     font-size: 2rem;
     margin-bottom: 1rem;
 }
@@ -88,7 +87,7 @@ body {
 }
 /* Facts & Figures Section */
 .facts-figures-section {
-    background-color: #E8DFF1; 
+    
     padding: 1rem 1rem;
 }
 
@@ -137,178 +136,22 @@ body {
     animation: typing 2s steps(30, end) forwards;
 }
 
-/* Other Benefits Section */
-.other-benefits-section {
-    padding: 2rem 0;
-    background-color: #F7F9FC; 
+/* Benefits List */
+.benefits-list {
+    list-style-type: disc; /* Standard bullet points */
+    padding-left: 1.5rem; /* Space between bullet and text */
 }
 
-.other-benefits-section h4 {
-    color: #3B1D70; 
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+.benefits-list li {
+    margin-bottom: 0.5rem; 
 }
 
-.benefits-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem; 
-}
-
-.benefit-card {
-    background-color: #E8DFF1; 
-    border: 1px solid #9C92AC; 
-    border-radius: 10px; 
-    padding: 1.5rem;
-    width: 250px; 
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s, box-shadow 0.3s; 
-}
-
-.benefit-card:hover {
-    transform: translateY(-5px); 
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
-}
-
-.benefit-card i {
-    font-size: 2rem;
-    color: #3B1D70; 
-    margin-bottom: 0.5rem;
-}
-
-.benefit-card p {
-    font-size: 1.2rem; 
-    color: #04020B; 
-    margin: 0;
-}
-/* What Can an AI Voice Assistant Do Section */
-.what-can-do-section {
-    background-color: #F5F5F5;
-    padding: 4rem 1rem;
-    border-radius: 8px;
-}
-
-.section-heading {
-    font-size: 2rem;
-    color: #3B1D70;
-    margin-bottom: 1rem;
-}
-
-.section-description {
-    font-size: 1.2rem;
-    color: #322BAB;
-    margin-bottom: 2rem;
-}
-
-.feature-box {
-    background: #E8DFF1;
-    padding: 0.5rem;
-    border-radius: 500px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    display: flex;   /* This constrols box of all */
-}
-
-.feature-box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.feature-icon {
-    font-size: 3rem;
-    color: #322BAB;
-    margin-bottom: 1rem;
-}
-
-.feature-box h4 {
-    font-size: 1.25rem;
-    color: #3B1D70;
-}
-/* Seamless CRM Integration Section */
-.crm-integration-section {
-    background-color: #F5F5F5;
-    padding: 3rem 1rem;
-    border-radius: 8px;
-}
-
-.section-subtitle {
-    font-size: 1.5rem;
-    color: #3B1D70;
-    margin-bottom: 0.5rem;
-}
-.feature-box p {
-    font-size: 1.1rem;
-    color: #3B1D70;
-    margin: 0;
-}
-
-/* Custom Dashboard Section */
-.dashboard-section {
-    background-color: #F7F9FC;
-    padding: 4rem 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.section-heading {
-    font-size: 2.5rem;
-    color: #3B1D70;
-    font-weight: 700;
-}
-
-.section-description {
-    font-size: 1.2rem;
-    color: #5A4F77;
-    margin-bottom: 2rem;
-}
-
-.feature-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    padding: 0;
-    margin: 0;
-}
-
-.feature-list li {
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #E8DFF1;
-    border-radius: 8px;
-    padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, background-color 0.3s;
-}
-
-.feature-list li:hover {
-    transform: translateY(-5px);
-    background-color: #D0C9E0;
-}
-
-.feature-icon {
-    font-size: 2rem;
-    color: #3B1D70;
-    margin-right: 0.75rem;
-}
 /* FAQ Section */
 .faq-section {
-    background-color: #F5F5F5;
+    background-color: #DDA0DD; /* Plum */
     padding: 3rem 1.5rem;
     border-radius: 10px;
-}
-
-.section-heading {
-    font-size: 2.5rem;
-    color: #3B1D70;
-    margin-bottom: 1.5rem;
-    font-weight: 700;
-    text-align: center;
+    color: white; /* Text color */
 }
 
 .faq-card {
@@ -316,20 +159,14 @@ body {
     margin-bottom: 1rem;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .faq-card .card-header {
-    background-color: #E8DFF1;
-    border-bottom: 1px solid #D0C9E0;
-}
-
-.faq-card .card-header h5 {
-    margin: 0;
+    background-color: #3B1D70; /* Plum */
 }
 
 .faq-card .btn-link {
-    color: #3B1D70;
+    color: white; /* Text color */
     font-size: 1.2rem;
     font-weight: 600;
     text-align: left;
@@ -342,12 +179,12 @@ body {
 }
 
 .faq-card .btn-link:hover {
-    color: #322BAB;
+    color: #D0C9E0; /* Lighter plum color on hover */
 }
 
 .faq-card .card-body {
     font-size: 1rem;
-    color: #04020B;
+    color: white; /* Text color */
     padding: 1.5rem;
-    background-color: #E8DFF1;
+    background-color: #3B1D70; /* Plum */
 }
