@@ -8,41 +8,45 @@ body {
     font-size: 1.2rem;
     color: white;
 }
-/* Hero Section Styles */
-.hero {
-   /*  background-color: #322BAB; */
-    /* color: #E8DFF1; */
-    padding: 5rem 2rem;
-}
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
+
 .navbar{
     position: relative;
 }
 .nav-item{
     position: absolute;
-    top: 0;
+    
     right: 0;
-    margin-bottom: 1.3rem;
+    
     margin-right: 2rem;
+    list-style-type: none;
+}
+
+.navbar-brand{
+    position: absolute;
+    top: -4;
+    left: 0;
+    width: 50px;
+    height: auto;  
 }
 @media (max-width: 768px) {
     .logo{
         margin-bottom: 40rem;
     }
-    }
-.logo{
-    position: absolute;
-    top: 0;
-    left: 0;
-    
-}
-.hero p {
-    font-size: 1.2rem;
 }
 
+/* Hero Section Styles */
+.hero {
+    /*  background-color: #322BAB; */
+     /* color: #E8DFF1; */
+     padding: 5rem 2rem;
+ }
+ .hero h1 {
+     font-size: 2.5rem;
+     margin-bottom: 1rem;
+ }
+ .hero p {
+    font-size: 1.2rem;
+}
 /* Primary Button Styles */
 .btn-primary {
     background-color: #9C92AC;
@@ -184,7 +188,7 @@ body {
 
 .faq-card .card-body {
     font-size: 1rem;
-    color: white; /* Text color */
+    color: white; 
     padding: 1.5rem;
     background-color: #3B1D70; /* Plum */
 }
