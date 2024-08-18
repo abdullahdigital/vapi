@@ -10,9 +10,9 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-darkblue mb-0 pb-0" style="height: 5.5rem;">
-        <a class="navbar-brand" href="index.html">
-            <img src="static/logo1.png" width="180rem" alt="">
+<nav class="navbar navbar-expand-lg navbar-dark bg-darkblue mb-0 pb-0 d-flex justify-content-center align-items-center " style="height: 5.5rem;">
+        <a class="navbar-brand " href="index.html">
+            <img src="static/logo1.png" width="180rem" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -20,10 +20,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link btn btn-primary">Talk With Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-primary">Login</a>
+                    <a class="nav-link btn btn-primary" href="https://calendly.com/ozairmalik/livedemo" target="_blank">Talk With Us</a>
                 </li>
             </ul>
         </div>
@@ -56,7 +53,7 @@
         </div>
         <div class="fact-box">
             <div class="fact-number" data-number="40" data-unit="%">0</div>
-            <p>Missed Calls</p>
+            <p>Calls missed by Vet clinics</p>
         </div>
     </div>
 
@@ -66,25 +63,34 @@
 <!-- Try Demo -->
 <section class="container  text-center demo-section">
     <h2>Skeptical? Try our demo.</h2>
-    <a href="#" class="btn btn-outline-primary btn-lg">Book a Demo</a>
+    <a href="https://calendly.com/ozairmalik/livedemo" target="_blank" class="btn btn-outline-demo btn-lg">Book a Demo</a>
 </section>
 
 <!-- What Can an AI Voice Assistant Do -->
 <section class="container what-can-do-section">
     <h1 class="section-heading text-center my-2">What Can an AI Voice Assistant Do?</h1>
-    <p class="section-description">Our AI voice assistants handle requests and respond quickly. They can:</p>
-    <ul>
-        <li>Respond lightning-fast</li>
-        <li>Operate 24/7</li>
-        <li>Interact in a human-like way</li>
-        <li>Integrate seamlessly with existing systems</li>
-        <li>Be trained on your vet clinic's details</li>
-    </ul>
+    <div class="what-can-do-container">
+        <div class="what-can-do-box">
+            <p>Answer customer inquiries from your personalized practice knowledge base.</p>
+        </div>
+        <div class="what-can-do-box">
+            <p>Check appointment slots availability.</p>
+        </div>
+        <div class="what-can-do-box">
+            <p>Book appointment slots in your preferred calendar/system.</p>
+        </div>
+        <div class="what-can-do-box">
+            <p>Send appointment confirmation messages.</p>
+        </div>
+        <div class="what-can-do-box">
+            <p>Reduced no-shows with personalized reminders.</p>
+        </div>
+    </div>
 </section>
 
 <!-- Benefits -->
 <section class="container my-5 other-benefits-section">
-    <h1 class="text-center">Discover Your Benefits: Unleash the Full Potential of Your Business!</h1>
+    <h1 class="text-center">Discover The Benefits: Unleash the Full Potential of Your Practice!</h1>
     <div class="benefits-container text-center">
         <div class="benefit-box">
             <p>Reduce phone calls</p>
@@ -107,17 +113,13 @@
     </div>
 </section>
 
-
 <!-- Seamless CRM Integration -->
 <section class="container my-5 crm-integration-section">
-    <h1 class="text-center section-subtitle">Seamless CRM Integration</h1>
+    <h1 class="text-center section-subtitle">Seamless Integration</h1>
     <p class="text-center section-heading">Upgrade Your Vet Practice/Clinic with Cutting-Edge AI</p>
     <div class="crm-integration-container text-center">
         <div class="crm-box">
             <p>Integrate with CRMs</p>
-        </div>
-        <div class="crm-box">
-            <p>Reduce no-shows</p>
         </div>
         <div class="crm-box">
             <p>Optimize scheduling</p>
@@ -137,29 +139,22 @@
     <p class="section-description text-center">See it all with our custom dashboard.</p>
     <div class="dashboard-container text-center">
         <div class="dashboard-box">
+            <p>Customer Details</p>
+        </div>
+        <div class="dashboard-box">
+            <p>Appointment Details</p>
+        </div>
+        <div class="dashboard-box">
+            <p>Call Transcripts</p>
+        </div>
+        <div class="dashboard-box">
+            <p>Call Recordings</p>
+        </div>
+        <div class="dashboard-box">
             <p>Call Analytics</p>
-        </div>
-        <div class="dashboard-box">
-            <p>Call Duration</p>
-        </div>
-        <div class="dashboard-box">
-            <p>Appointment Scheduling</p>
-        </div>
-        <div class="dashboard-box">
-            <p>Call Logs</p>
-        </div>
-        <div class="dashboard-box">
-            <p>Recordings</p>
-        </div>
-        <div class="dashboard-box">
-            <p>Search Calls</p>
-        </div>
-        <div class="dashboard-box">
-            <p>Automation Features</p>
         </div>
     </div>
 </section>
-
 
 <!-- FAQ -->
 <section class="container my-1 faq-section">
@@ -235,17 +230,16 @@
             </div>
             <div id="collapse5" class="collapse" aria-labelledby="faq5" data-parent="#accordion">
                 <div class="card-body">
-                    Any issues are handled in-house by a personal support contact. Rest assured, our teams are here to help!
+                    We offer fully managed service with on-going support so that you can fully focus on your practice.
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<footer class="bg-darkblue text-light p-2">
+<footer class="bg-darkblue text-light p-1">
     <div class="container text-center">
         <p>&copy; 2024 Petline. All Rights Reserved.</p>
-        <p>Contact us: info@petline.com</p>
     </div>
 </footer>
 

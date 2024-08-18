@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 body {
-    font-family: Arial, sans-serif;
-   /*  background-color: #DDA0DD; */
+    font-family: "Raleway", sans-serif;
     background-color: #050505;
     margin: 0;
     font-size: 1.2rem;
@@ -37,8 +37,14 @@ body {
 .navbar-brand img {
     width: 180px;
     height: auto;
+    max-width: 100%;
 }
-
+.navbar{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
 @media (max-width: 768px) {
     .nav-item {
         margin-left: 0;
@@ -56,14 +62,15 @@ body {
 }
 /* Primary Button Styles */
 .btn-primary {
-    background-color: #9C92AC;
+    background-color: #050505;
     border: none;
     border-radius: 500px;
     color: white !important;
+    font-weight: bolder;
+    padding: 15px;
 }
 
 .bg-darkblue {
-    /* background-color: #3B1D70; */
     background-color: #390492 ;
 }
 
@@ -95,19 +102,81 @@ body {
     margin-bottom: 1rem;
 }
 
-.demo-section .btn-outline-primary {
-    color: #322BAB; 
+.demo-section .btn-outline-demo {
+    background-color: black;
+    color: white !important;
+    font-weight: bolder;
     border-color: #322BAB;
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     border-radius: 500px;
 }
 
-.demo-section .btn-outline-primary:hover {
+.demo-section .btn-outline-demo:hover {
     background-color: #322BAB;
     color: #E8DFF1; 
     
 }
+/* What Can Do Container */
+.what-can-do-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsive columns with wider minimum width */
+    gap: 1.5rem; /* Spacing for readability */
+    padding: 1rem; /* Padding around the grid */
+}
+
+/* What Can Do Box */
+.what-can-do-box {
+    background-color: #390492; /* Purplish background color */
+    color: #E8DFF1; /* Light text color */
+    padding: 1.5rem; /* Padding inside the box */
+    border-radius: 12px; /* Smooth corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Box shadow for depth */
+    font-size: 1.1rem; /* Font size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140px; /* Adjusted height for a rectangular shape */
+    transition: transform 0.3s ease-in-out; /* Hover effect */
+}
+
+/* Text inside the Box */
+.what-can-do-box p {
+    margin: 0; /* No margin for tighter text alignment */
+}
+
+/* Hover Effect */
+.what-can-do-box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    background-color: #2E0860; /* Darker purple on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .what-can-do-container {
+        grid-template-columns: repeat(5, 1fr); /* 4 boxes in a row for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .what-can-do-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 boxes in a row for small screens */
+    }
+    .what-can-do-box {
+        font-size: 1rem; /* Smaller font size for small screens */
+        height: 170px !important; /* Reduced height */
+    }
+}
+
+
+/* Section heading styling */
+.section-heading {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
 /* Facts & Figures Section */
 .facts-container {
     display: grid;
@@ -225,7 +294,7 @@ body {
 /* CRM Integration Container */
 .crm-integration-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); 
     gap: 1rem; 
 }
 
@@ -240,7 +309,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 75px; /* Adjust height to make it a rectangle */
+    height: 80px; /* Adjust height to make it a rectangle */
 }
 .crm-box:hover {
     transform: translateY(-5px); 
