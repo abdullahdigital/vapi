@@ -10,15 +10,25 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-darkblue" style="height: 5.5rem;">
-    <a class="navbar-brand" href="index.html">
-        <img src="static/logo1.png" width="180rem"  alt="" >
-    </a>
-    <li class="nav-item">
-        <a class="nav-link btn btn-primary">Login</a>
-      </li>
+<nav class="navbar navbar-expand-lg navbar-dark bg-darkblue mb-0 pb-0" style="height: 5.5rem;">
+        <a class="navbar-brand" href="index.html">
+            <img src="static/logo1.png" width="180rem" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link btn btn-primary">Talk With Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-primary">Login</a>
+                </li>
+            </ul>
+        </div>
 </nav>
-
+    
 <!-- Book -->
 <section class="hero text-center d-flex align-items-center justify-content-center">
     <div>
@@ -28,13 +38,7 @@
     </div>
 </section>
 
-<!-- Try Demo -->
-<section class="container  text-center demo-section">
-    <h2>Skeptical? Try our demo.</h2>
-    <a href="#" class="btn btn-outline-primary btn-lg">Book a Demo</a>
-</section>
 <!-- Facts -->
-
 <section class="container facts-figures-section">
     <!-- <h3 class="text-center">Facts & Figures</h3> -->
     <div class="facts-container text-center">
@@ -51,12 +55,18 @@
             <p>Faster Response Time</p>
         </div>
         <div class="fact-box">
-            <div class="fact-number" data-number="20-40" data-unit="%">0</div>
+            <div class="fact-number" data-number="40" data-unit="%">0</div>
             <p>Missed Calls</p>
         </div>
     </div>
 
 
+</section>
+
+<!-- Try Demo -->
+<section class="container  text-center demo-section">
+    <h2>Skeptical? Try our demo.</h2>
+    <a href="#" class="btn btn-outline-primary btn-lg">Book a Demo</a>
 </section>
 
 <!-- What Can an AI Voice Assistant Do -->
@@ -73,54 +83,87 @@
 </section>
 
 <!-- Benefits -->
-<section class="container my-4 other-benefits-section">
-    <h1 class="text-center">Benefits</h1>
-    <ul class="benefits-list">
-        <li>Reduce phone calls</li>
-        <li>Reduce no-shows</li>
-        <li>Client retention</li>
-        <li>Better pet owner experience</li>
-        <li>Improve client acquisition</li>
-        <li>Reduce employee stress and burnout</li>
-    </ul>
-</section>
-
-<!-- Seamless CRM Integration -->
-<section class="container my-3 crm-integration-section">
-    <div class="mb-2">
-        <h1 class="text-center section-subtitle">Seamless CRM Integration</h1>
-        <p class="text-center section-heading">Upgrade Your Vet Practice/Clinic with Cutting-Edge AI</p>
-        <p class="section-description">
-            Our AI voice assistants:
-        </p>
-        <ul>
-            <li>Integrate with CRMs</li>
-            <li>Reduce no-shows</li>
-            <li>Optimize scheduling</li>
-            <li>Enhance patient communication</li>
-            <li>Increase practice efficiency</li>
-        </ul>
+<section class="container my-5 other-benefits-section">
+    <h1 class="text-center">Discover Your Benefits: Unleash the Full Potential of Your Business!</h1>
+    <div class="benefits-container text-center">
+        <div class="benefit-box">
+            <p>Reduce phone calls</p>
+        </div>
+        <div class="benefit-box">
+            <p>Reduce no-shows</p>
+        </div>
+        <div class="benefit-box">
+            <p>Client retention</p>
+        </div>
+        <div class="benefit-box">
+            <p>Better pet owner experience</p>
+        </div>
+        <div class="benefit-box">
+            <p>Improve client acquisition</p>
+        </div>
+        <div class="benefit-box">
+            <p>Reduce employee stress and burnout</p>
+        </div>
     </div>
 </section>
 
-<!-- Custom Dashboard -->
-<section class="container my-4 dashboard-section">
-    <h3 class="section-heading">A Custom Dashboard for Real-Time Analytics</h3>
-    <p class="section-description">See it all with our custom dashboard.</p>
-    <ul class=" feature-list">
-        <li>Call Analytics</li>
-        <li>Call Duration</li>
-        <li>Appointment Scheduling</li>
-        <li>Call Logs</li>
-        <li>Recordings</li>
-        <li>Search Calls</li>
-        <li>Automation Features</li>
-    </ul>
+
+<!-- Seamless CRM Integration -->
+<section class="container my-5 crm-integration-section">
+    <h1 class="text-center section-subtitle">Seamless CRM Integration</h1>
+    <p class="text-center section-heading">Upgrade Your Vet Practice/Clinic with Cutting-Edge AI</p>
+    <div class="crm-integration-container text-center">
+        <div class="crm-box">
+            <p>Integrate with CRMs</p>
+        </div>
+        <div class="crm-box">
+            <p>Reduce no-shows</p>
+        </div>
+        <div class="crm-box">
+            <p>Optimize scheduling</p>
+        </div>
+        <div class="crm-box">
+            <p>Enhance patient communication</p>
+        </div>
+        <div class="crm-box">
+            <p>Increase practice efficiency</p>
+        </div>
+    </div>
 </section>
 
+<!-- Dashboard -->
+<section class="container mt-5 dashboard-section">
+    <h3 class="section-heading text-center">A Custom Dashboard for Real-Time Analytics</h3>
+    <p class="section-description text-center">See it all with our custom dashboard.</p>
+    <div class="dashboard-container text-center">
+        <div class="dashboard-box">
+            <p>Call Analytics</p>
+        </div>
+        <div class="dashboard-box">
+            <p>Call Duration</p>
+        </div>
+        <div class="dashboard-box">
+            <p>Appointment Scheduling</p>
+        </div>
+        <div class="dashboard-box">
+            <p>Call Logs</p>
+        </div>
+        <div class="dashboard-box">
+            <p>Recordings</p>
+        </div>
+        <div class="dashboard-box">
+            <p>Search Calls</p>
+        </div>
+        <div class="dashboard-box">
+            <p>Automation Features</p>
+        </div>
+    </div>
+</section>
+
+
 <!-- FAQ -->
-<section class="container my-5 faq-section">
-    <h3 class="section-heading">Frequently Asked Questions</h3>
+<section class="container my-1 faq-section">
+    <h3 class="section-heading text-center">Frequently Asked Questions</h3>
     <div id="accordion">
         <div class="card faq-card">
             <div class="card-header" id="faq1">
@@ -199,7 +242,7 @@
     </div>
 </section>
 
-<footer class="bg-darkblue text-light py-4">
+<footer class="bg-darkblue text-light p-2">
     <div class="container text-center">
         <p>&copy; 2024 Petline. All Rights Reserved.</p>
         <p>Contact us: info@petline.com</p>

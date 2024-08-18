@@ -1,43 +1,74 @@
-/* Base Styles */
 body {
     font-family: Arial, sans-serif;
-    color: #04020B;
-    background-color: #E8DFF1;
-    background-color: #DDA0DD;
+   /*  background-color: #DDA0DD; */
+    background-color: #050505;
     margin: 0;
     font-size: 1.2rem;
     color: white;
+    max-width: 100%;
 }
-
-.navbar{
+.hero {
     position: relative;
-}
-.nav-item{
-    position: absolute;
-    
-    right: 0;
-    
-    margin-right: 2rem;
-    list-style-type: none;
+    z-index: 2;
+    padding: 1rem 2rem;
+    background-color: #000; 
 }
 
-.navbar-brand{
+/* Purplish effect under the header */
+.hero::before {
+    content: "";
     position: absolute;
-    top: -4;
+    top: 0;
     left: 0;
-    width: 50px;
-    height: auto;  
+    width: 100%;
+    height: 100px; 
+    background: linear-gradient(
+        to bottom,
+        rgba(57, 4, 146, 0.6), /* Purplish tint */
+        rgba(5, 5, 5, 0) /* Transparent */
+    );
+    z-index: -1; /* Places the effect behind the header */
 }
+
+.nav-item {
+    list-style-type: none;
+    margin-left: 1rem;
+}
+.navbar-brand img {
+    width: 180px;
+    height: auto;
+}
+
 @media (max-width: 768px) {
-    .logo{
-        margin-bottom: 40rem;
+    .nav-item {
+        margin-left: 0;
+        margin-top: 0.5rem;
+        width: 6rem;
+        margin-bottom: 1rem;
     }
+    .navbar{
+        height: auto !important;
+    }
+    
+}
+.white{
+    color: white;
+}
+/* Primary Button Styles */
+.btn-primary {
+    background-color: #9C92AC;
+    border: none;
+    border-radius: 500px;
+    color: white !important;
+}
+
+.bg-darkblue {
+    /* background-color: #3B1D70; */
+    background-color: #390492 ;
 }
 
 /* Hero Section Styles */
 .hero {
-    /*  background-color: #322BAB; */
-     /* color: #E8DFF1; */
      padding: 5rem 2rem;
  }
  .hero h1 {
@@ -47,23 +78,11 @@ body {
  .hero p {
     font-size: 1.2rem;
 }
-/* Primary Button Styles */
-.btn-primary {
-    background-color: #9C92AC;
-    border: none;
-    border-radius: 500px;
-}
-
-.bg-darkblue {
-    background-color: #3B1D70;
-}
-
 /* Footer Styles */
 .footer {
     background-color: #3B1D70;
     color: #E8DFF1;
 }
-
 
 /* Demo Section */
 .demo-section {
@@ -90,36 +109,26 @@ body {
     
 }
 /* Facts & Figures Section */
-.facts-figures-section {
-    
-    padding: 1rem 1rem;
-}
-
 .facts-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Increase the minimum width */
     gap: 1.5rem;
-    margin-bottom: 3rem;
 }
 
 .fact-box {
-    background-color: #322BAB; 
+    background-color: #390492;
     color: #E8DFF1;
-    padding: 2rem;
+    padding: 1.5rem; /* Adjust padding for better spacing */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 150px; /* Reduce height to make the box more rectangular */
 }
 
 .fact-number {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 0.15em solid #E8DFF1;
-    animation: typing 2s steps(30, end) forwards;
     font-size: 2.5rem;
     font-weight: bold;
-    padding-right: 0.5rem; 
-    text-align: center; 
+    padding-right: 0.5rem;
+    text-align: center;
 }
 
 .facts-container p {
@@ -140,37 +149,188 @@ body {
     animation: typing 2s steps(30, end) forwards;
 }
 
-/* Benefits List */
-.benefits-list {
-    list-style-type: disc; /* Standard bullet points */
-    padding-left: 1.5rem; /* Space between bullet and text */
+@media (max-width: 768px) {
+    .facts-container {
+        grid-template-columns: repeat(2, 1fr); /* Ensure two rectangles per row on small screens */
+    }
+
+    .fact-box {
+        height: auto; /* Allow height to adjust for smaller screens */
+        padding: 1rem;
+    }
+
+    .fact-number {
+        font-size: 2rem;
+    }
 }
 
-.benefits-list li {
-    margin-bottom: 0.5rem; 
+
+/* Benefits Container */
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsive columns with wider minimum width */
+    gap: 1.5rem; /* Increased spacing for better readability */
+    padding: 1rem; /* Added padding around the grid */
 }
+
+/* Benefits Container */
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 boxes in a single row on large screens */
+    gap: 1.5rem; /* Spacing between the boxes */
+    padding: 1rem; /* Padding around the grid */
+}
+
+/* Benefit Box */
+.benefit-box {
+    background-color: #390492; 
+    color: #E8DFF1;
+    padding: 1.5rem; /* Padding inside the box */
+    border-radius: 12px; /* Smooth corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Pronounced box shadow */
+    font-size: 1.1rem; /* Font size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; /* Height adjustment for a rectangular shape */
+    transition: transform 0.3s ease-in-out; /* Hover effect */
+}
+
+.benefit-box p {
+    margin: 0; /* No margin for tighter text alignment */
+}
+
+/* Hover Effect */
+.benefit-box:hover {
+    transform: translateY(-5px); 
+    background-color: #2E0860; 
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .benefits-container {
+        grid-template-columns: repeat(4, 1fr); /* 4 boxes in a row for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .benefits-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 boxes in a row for small screens */
+    }
+    .benefit-box {
+        font-size: 1rem; /* Smaller font for small screens */
+        height: 90px; /* Reduced height */
+    }
+}
+/* CRM Integration Container */
+.crm-integration-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 1rem; 
+}
+
+/* CRM Box */
+.crm-box {
+    background-color: #390492; 
+    color: #E8DFF1;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem; /* Adjust font size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px; /* Adjust height to make it a rectangle */
+}
+.crm-box:hover {
+    transform: translateY(-5px); 
+    background-color: #2E0860; 
+}
+
+/* Section Title */
+.crm-integration-section .section-subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.crm-integration-section .section-heading {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .crm-integration-container {
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); 
+    }
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Responsive grid for boxes */
+    gap: 1rem; 
+}
+
+/* Dashboard Box */
+.dashboard-box {
+    background-color: #390492; 
+    color: #E8DFF1;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem; /* Adjust font size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px; /* Adjust height to make it a rectangle */
+}
+.dashboard-box:hover {
+    transform: translateY(-5px); 
+    background-color: #2E0860; 
+}
+
+/* Section Title and Description */
+.dashboard-section .section-heading {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.dashboard-section .section-description {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); 
+    }
+}
+
+
+
 
 /* FAQ Section */
 .faq-section {
-    background-color: #DDA0DD; /* Plum */
     padding: 3rem 1.5rem;
     border-radius: 10px;
-    color: white; /* Text color */
+    color: white; 
 }
 
 .faq-card {
     border: none;
-    margin-bottom: 1rem;
     border-radius: 8px;
     overflow: hidden;
 }
 
 .faq-card .card-header {
-    background-color: #3B1D70; /* Plum */
+    /* background-color: #3B1D70;  */
+    background-color:black ;
 }
 
 .faq-card .btn-link {
-    color: white; /* Text color */
+    color: white; 
     font-size: 1.2rem;
     font-weight: 600;
     text-align: left;
@@ -183,12 +343,13 @@ body {
 }
 
 .faq-card .btn-link:hover {
-    color: #D0C9E0; /* Lighter plum color on hover */
+    color: #D0C9E0; 
 }
 
 .faq-card .card-body {
     font-size: 1rem;
     color: white; 
     padding: 1.5rem;
-    background-color: #3B1D70; /* Plum */
+    /* background-color: #3B1D70;  */
+    background-color: black;
 }
