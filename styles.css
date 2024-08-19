@@ -27,7 +27,7 @@ body {
         rgba(57, 4, 146, 0.6), /* Purplish tint */
         rgba(5, 5, 5, 0) /* Transparent */
     );
-    z-index: -1; /* Places the effect behind the header */
+    z-index: -1; 
 }
 
 .nav-item {
@@ -134,12 +134,12 @@ body {
 
 /* What Can Do Box */
 .what-can-do-box {
-    background-color: #390492; /* Purplish background color */
-    color: #E8DFF1; /* Light text color */
-    padding: 2rem; /* Padding inside the box */
-    border-radius: 12px; /* Smooth corners */
+    background-color: #390492; 
+    color: #E8DFF1; 
+    padding: 2rem; 
+    border-radius: 12px; 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Box shadow for depth */
-    font-size: 1.1rem; /* Font size */
+    font-size: 1.1rem; 
     max-width: 600px; /* Max width for the box */
     text-align: center; /* Center align text */
     margin: 0 auto; /* Center the box horizontally */
@@ -151,28 +151,27 @@ body {
     padding-left: 1.5rem; 
     margin: 0; 
     text-align: left; 
-    list-style: none;
 }
 
 /* What Can Do List Items */
 .what-can-do-list li {
-    margin-bottom: 1rem; /* Spacing between list items */
+    margin-bottom: 1rem; 
 }
 
 /* Hover Effect */
 .what-can-do-box:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    background-color: #2E0860; /* Darker purple on hover */
+    transform: translateY(-5px); 
+    background-color: #2E0860; 
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .what-can-do-box {
-        font-size: 1rem; /* Smaller font size for small screens */
-        padding: 1.5rem; /* Adjust padding */
+        font-size: 1rem; 
+        padding: 1.5rem; 
     }
     .what-can-do-list li {
-        margin-bottom: 0.8rem; /* Adjust spacing for smaller screens */
+        margin-bottom: 0.8rem; 
     }
 }
 
@@ -227,11 +226,11 @@ body {
 
 @media (max-width: 768px) {
     .facts-container {
-        grid-template-columns: repeat(2, 1fr); /* Ensure two rectangles per row on small screens */
+        grid-template-columns: repeat(2, 1fr); 
     }
 
     .fact-box {
-        height: auto; /* Allow height to adjust for smaller screens */
+        height: auto; 
         padding: 1rem;
     }
 
@@ -245,26 +244,26 @@ body {
 .benefits-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsive columns with wider minimum width */
-    gap: 1.5rem; /* Increased spacing for better readability */
-    padding: 1rem; /* Added padding around the grid */
+    gap: 1.5rem; 
+    padding: 1rem; 
 }
 
 /* Benefits Container */
 .benefits-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr); /* 6 boxes in a single row on large screens */
-    gap: 1.5rem; /* Spacing between the boxes */
-    padding: 1rem; /* Padding around the grid */
+    gap: 1.5rem; 
+    padding: 1rem;
 }
 
 /* Benefit Box */
 .benefit-box {
     background-color: #390492; 
     color: #E8DFF1;
-    padding: 1.5rem; /* Padding inside the box */
-    border-radius: 12px; /* Smooth corners */
+    padding: 1.5rem; 
+    border-radius: 12px; 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Pronounced box shadow */
-    font-size: 1.1rem; /* Font size */
+    font-size: 1.1rem; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -380,8 +379,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 75px; /* Minimum height to ensure consistency */
-    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+    min-height: 75px; 
+    transition: transform 0.3s ease-in-out; 
     text-align: center; /* Center text horizontally */
     flex-direction: column; /* Stack content vertically */
 }
