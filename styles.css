@@ -103,10 +103,10 @@ body {
 }
 
 .demo-section .btn-outline-demo {
-    background-color: black;
+    background-color: #390492;
     color: white !important;
     font-weight: bolder;
-    border-color: #322BAB;
+    border-color: black;
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     border-radius: 500px;
@@ -117,32 +117,45 @@ body {
     color: #E8DFF1; 
     
 }
-/* What Can Do Container */
-.what-can-do-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsive columns with wider minimum width */
-    gap: 1.5rem; /* Spacing for readability */
-    padding: 1rem; /* Padding around the grid */
+/* What Can Do Section */
+.what-can-do-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+/* Section Heading */
+.section-heading {
+    margin-bottom: 2rem;
+    font-size: 2rem; 
+    color: #390492; 
 }
 
 /* What Can Do Box */
 .what-can-do-box {
     background-color: #390492; /* Purplish background color */
     color: #E8DFF1; /* Light text color */
-    padding: 1.5rem; /* Padding inside the box */
+    padding: 2rem; /* Padding inside the box */
     border-radius: 12px; /* Smooth corners */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Box shadow for depth */
     font-size: 1.1rem; /* Font size */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 140px; /* Adjusted height for a rectangular shape */
-    transition: transform 0.3s ease-in-out; /* Hover effect */
+    max-width: 600px; /* Max width for the box */
+    text-align: center; /* Center align text */
+    margin: 0 auto; /* Center the box horizontally */
 }
 
-/* Text inside the Box */
-.what-can-do-box p {
-    margin: 0; /* No margin for tighter text alignment */
+/* What Can Do List */
+.what-can-do-list {
+    list-style-type: disc; /* Bullet points */
+    padding-left: 1.5rem; /* Spacing from the left edge */
+    margin: 0; /* Remove default margin */
+    text-align: left; /* Align text to the left within the box */
+}
+
+/* What Can Do List Items */
+.what-can-do-list li {
+    margin-bottom: 1rem; /* Spacing between list items */
 }
 
 /* Hover Effect */
@@ -152,22 +165,15 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 1200px) {
-    .what-can-do-container {
-        grid-template-columns: repeat(5, 1fr); /* 4 boxes in a row for medium screens */
-    }
-}
-
 @media (max-width: 768px) {
-    .what-can-do-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 boxes in a row for small screens */
-    }
     .what-can-do-box {
         font-size: 1rem; /* Smaller font size for small screens */
-        height: 170px !important; /* Reduced height */
+        padding: 1.5rem; /* Adjust padding */
+    }
+    .what-can-do-list li {
+        margin-bottom: 0.8rem; /* Adjust spacing for smaller screens */
     }
 }
-
 
 /* Section heading styling */
 .section-heading {
@@ -291,55 +297,71 @@ body {
         height: 90px; /* Reduced height */
     }
 }
-/* CRM Integration Container */
-.crm-integration-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); 
-    gap: 1rem; 
-}
-
-/* CRM Box */
-.crm-box {
-    background-color: #390492; 
-    color: #E8DFF1;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 1rem; /* Adjust font size */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80px; /* Adjust height to make it a rectangle */
-}
-.crm-box:hover {
-    transform: translateY(-5px); 
-    background-color: #2E0860; 
+/* CRM Integration Section */
+.crm-integration-section {
+    padding: 2rem 1rem;
+    text-align: center;
 }
 
 /* Section Title */
 .crm-integration-section .section-subtitle {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
 .crm-integration-section .section-heading {
     font-size: 1.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* CRM Integration Container */
+.crm-integration-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid with flexible columns */
+    gap: 1.5rem; /* Spacing between the boxes */
+}
+
+/* CRM Box */
+.crm-box {
+    background-color: #390492; /* Purplish background color */
+    color: #E8DFF1; /* Light text color */
+    padding: 1.5rem; /* Padding inside the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px; /* Adjust height */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+    font-size: 1.1rem; /* Font size for text inside the box */
+}
+
+.crm-box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    background-color: #2E0860; /* Darker purple on hover */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .crm-integration-container {
-        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); 
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust column size for smaller screens */
+    }
+
+    .crm-box {
+        font-size: 1rem; /* Slightly smaller font size for mobile */
+        padding: 1rem; /* Adjust padding */
+        height: 90px; /* Adjust height */
+    }
+
+    .crm-integration-section .section-subtitle {
+        font-size: 1.6rem; /* Adjust title size for smaller screens */
+    }
+
+    .crm-integration-section .section-heading {
+        font-size: 1rem; /* Adjust heading size for smaller screens */
     }
 }
 
-/* Dashboard Container */
-.dashboard-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Responsive grid for boxes */
-    gap: 1rem; 
-}
 
 /* Dashboard Box */
 .dashboard-box {
@@ -348,12 +370,14 @@ body {
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 1rem; /* Adjust font size */
+    font-size: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 75px; /* Adjust height to make it a rectangle */
+    min-height: 75px; /* Minimum height to ensure consistency */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
 }
+
 .dashboard-box:hover {
     transform: translateY(-5px); 
     background-color: #2E0860; 
@@ -370,14 +394,35 @@ body {
     margin-bottom: 1.5rem;
 }
 
+/* Dashboard Container */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid layout */
+    gap: 1rem; /* Spacing between boxes */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .dashboard-container {
-        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); 
+        grid-template-columns: repeat(2, 1fr); /* Two boxes per row on smaller screens */
+    }
+
+    .dashboard-box {
+        font-size: 0.9rem; /* Slightly smaller font size on small screens */
+        min-height: 60px; /* Reduced height for small screens */
     }
 }
 
+@media (max-width: 480px) {
+    .dashboard-container {
+        grid-template-columns: repeat(1, 1fr); /* Single column layout on very small screens */
+    }
 
+    .dashboard-box {
+        font-size: 0.8rem; /* Further reduced font size on very small screens */
+        min-height: 50px; /* Minimum height for very small screens */
+    }
+}
 
 
 /* FAQ Section */
@@ -391,6 +436,8 @@ body {
     border: none;
     border-radius: 8px;
     overflow: hidden;
+    border: 2px solid #390492; 
+    border-radius: 8px;
 }
 
 .faq-card .card-header {
